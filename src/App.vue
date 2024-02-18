@@ -1,7 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import EventForm from '@/components/EventForm.vue'
+</script>
 
 <template>
-  <header>
-    <h1 class="text-4xl font-bold underline">Hello world!</h1>
-  </header>
+  <EventForm />
 </template>
