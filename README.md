@@ -1,6 +1,7 @@
-# vue-form-mastery
+# Vue Form Mastery
+*This repo features form components for common input scenarios. They're reusable, adaptable, and scalable.*
 
-This template should help get you started developing with Vue 3 in Vite.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/denys-petryniak/vue-form-mastery)
 
 ## Recommended IDE Setup
 
