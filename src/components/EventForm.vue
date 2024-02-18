@@ -102,13 +102,8 @@ async function onSubmit() {
 </script>
 
 <template>
-  <form
-    class="w-full max-w-[600px] p-8 border rounded-lg border-gray-400 dark:border-gray-600"
-    @submit.prevent="onSubmit"
-  >
-    <h1 class="text-3xl text-center font-medium leading-6 text-gray-700 dark:text-gray-200">
-      Create an event
-    </h1>
+  <form class="form" @submit.prevent="onSubmit">
+    <h1 class="title">Create an event</h1>
     <fieldset class="mt-12">
       <p>
         <BaseSelect
@@ -157,14 +152,14 @@ async function onSubmit() {
       <legend class="legend">Pets</legend>
       <div class="mt-5">
         <p class="inline-label">Are pets allowed?</p>
-        <p class="flex justify-center gap-6 mt-3">
+        <p class="mt-3 flex justify-center space-x-6">
           <BaseRadioGroup v-model="event.pets" :options="petOptions" name="pets" />
         </p>
       </div>
     </fieldset>
     <fieldset class="mt-8 text-center">
       <legend class="legend">Extras</legend>
-      <div class="flex justify-center gap-6 mt-5">
+      <div class="mt-5 flex justify-center space-x-6">
         <p class="flex">
           <BaseCheckbox v-model="event.extras.catering" label="Catering" />
         </p>
@@ -173,7 +168,7 @@ async function onSubmit() {
         </p>
       </div>
     </fieldset>
-    <BaseButton type="submit" :disabled="v$.$errors.length" class="mt-12 mx-auto">
+    <BaseButton type="submit" :disabled="v$.$errors.length" class="mx-auto mt-12">
       Submit
     </BaseButton>
     <p v-if="v$.$errors.length" class="errorMessage">Please fill out the required fields</p>

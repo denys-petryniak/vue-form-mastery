@@ -6,11 +6,11 @@
   html,
   body,
   #app {
-    @apply h-full m-0 p-0;
+    @apply m-0 h-full p-0;
   }
 
   html {
-    @apply text-gray-800 dark:text-gray-200 bg-slate-200 dark:bg-slate-950;
+    @apply bg-slate-200 font-mono text-gray-800 dark:bg-slate-950 dark:text-gray-200;
   }
 
   #app {
@@ -20,15 +20,23 @@
 
 @layer components {
   .btn {
-    @apply block px-4 py-1 rounded bg-teal-600 text-white cursor-pointer
+    @apply block cursor-pointer rounded bg-teal-600 px-4 py-2 text-white
       hover:bg-teal-700
-      disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50
-      focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2
+      focus:outline-none focus:ring-2 focus:ring-teal-400
+      focus:ring-offset-2 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50
       dark:focus:ring-offset-gray-800;
   }
 
+  .form {
+    @apply w-full max-w-[600px] rounded-lg border border-gray-400 p-10 dark:border-gray-600;
+  }
+
+  .title {
+    @apply text-center text-3xl font-medium leading-6 text-gray-700 dark:text-gray-200;
+  }
+
   .legend {
-    @apply block text-lg text-center font-medium text-gray-700 dark:text-gray-200;
+    @apply block text-center text-lg font-medium text-gray-700 dark:text-gray-200;
   }
 
   .label {
@@ -40,15 +48,15 @@
   }
 
   .field {
-    @apply transition px-4 py-2 mt-3 last:mb-0 w-full text-center bg-transparent border rounded border-gray-400 hover:ring-2 hover:ring-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-400 dark:border-gray-600;
+    @apply mt-3 w-full rounded border border-gray-400 bg-transparent px-4 py-2 text-center transition last:mb-0 hover:ring-2 hover:ring-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-400 dark:border-gray-600;
   }
 
   .radio {
-    @apply h-4 w-4 mr-2 border-gray-300 text-teal-600 focus:ring-teal-500;
+    @apply mr-2 h-4 w-4 border-gray-300 text-teal-600 focus:ring-teal-500;
   }
 
   .checkbox {
-    @apply h-4 w-4 mr-2 rounded border-gray-300 text-teal-600 focus:ring-teal-500;
+    @apply mr-2 h-4 w-4 rounded border-gray-300 text-teal-600 focus:ring-teal-500;
   }
 
   .error {
