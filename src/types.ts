@@ -3,7 +3,7 @@ interface Extras {
   music: boolean
 }
 
-export type Categories =
+export type Category =
   | 'sustainability'
   | 'nature'
   | 'animal welfare'

@@ -46,7 +46,7 @@ function updateModelValue(event: Event) {
       :id="`${uuid}-error`"
       :key="error.$uid"
       aria-live="assertive"
-      class="errorMessage"
+      class="error-message"
     >
       {{ error.$message }}
     </p>

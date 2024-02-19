@@ -2,12 +2,12 @@
 import { computed } from 'vue'
 import { v4 as uuidv4 } from 'uuid'
 import type { ErrorObject } from '@vuelidate/core'
-import type { Categories, ModelValue } from '@/types'
+import type { Category, ModelValue } from '@/types'
 
 interface Props {
   label?: string
   modelValue: ModelValue
-  options: Categories[]
+  options: Category[]
   errors?: ErrorObject[]
 }
 
@@ -52,7 +52,7 @@ function updateModelValue(event: Event) {
       :id="`${uuid}-error`"
       :key="error.$uid"
       aria-live="assertive"
-      class="errorMessage"
+      class="error-message"
     >
       {{ error.$message }}
     </p>

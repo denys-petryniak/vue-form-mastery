@@ -2,7 +2,7 @@
 import { computed, reactive, ref } from 'vue'
 import { useVuelidate } from '@vuelidate/core'
 import { helpers, maxLength, minLength, required } from '@vuelidate/validators'
-import type { Categories, Event, RadioOption } from '@/types'
+import type { Category, Event, RadioOption } from '@/types'
 
 import BaseButton from '@/components/base/BaseButton.vue'
 import BaseCheckbox from '@/components/base/BaseCheckbox.vue'
@@ -10,7 +10,7 @@ import BaseInput from '@/components/base/BaseInput.vue'
 import BaseRadioGroup from '@/components/base/BaseRadioGroup.vue'
 import BaseSelect from '@/components/base/BaseSelect.vue'
 
-const categories = ref<Categories[]>([
+const categories = ref<Category[]>([
   'sustainability',
   'nature',
   'animal welfare',

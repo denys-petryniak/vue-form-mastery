@@ -14,11 +14,11 @@ const emit = defineEmits<{
   (event: 'update:modelValue', value: boolean): void
 }>()
 
-const uuid = uuidv4()
-
 function updateModelValue(event: Event) {
   emit('update:modelValue', (event.target as HTMLInputElement).checked)
 }
+
+const uuid = uuidv4()
 </script>
 
 <template>
