@@ -171,6 +171,6 @@ async function onSubmit() {
     <BaseButton type="submit" :disabled="v$.$errors.length" class="mx-auto mt-12">
       Submit
     </BaseButton>
-    <p v-if="v$.$errors.length" class="errorMessage">Please fill out the required fields</p>
+    <p v-if="v$.$errors.length" class="error-message">Please fill out the required fields</p>
   </form>
 </template>

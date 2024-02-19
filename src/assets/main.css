@@ -63,7 +63,7 @@
     @apply !border-red-500;
   }
 
-  .errorMessage {
+  .error-message {
     @apply py-3 text-center text-red-500;
   }
 }
