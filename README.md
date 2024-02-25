@@ -1,9 +1,15 @@
 # Vue Form Mastery
 *This repository includes reusable, adaptable, and scalable form components designed for common input scenarios.*
 
+<img width="450" alt="image" src="https://github.com/denys-petryniak/vue-form-mastery/assets/16530588/e13425f9-59f8-4e07-8ded-1fae0cc82a35">
+
+## Explore in StackBlitz
+
+Click the button below to open the project in StackBlitz for preview and experimentation:
+
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/denys-petryniak/vue-form-mastery)
 
-<img width="342" alt="image" src="https://github.com/denys-petryniak/vue-form-mastery/assets/16530588/e13425f9-59f8-4e07-8ded-1fae0cc82a35">
+Feel free to explore the code, make changes, and see the results in real-time!
 
 ## Recommended IDE Setup
 
